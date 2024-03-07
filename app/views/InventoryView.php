@@ -6,7 +6,7 @@ class InventoryView {
         <head>
             <meta charset="UTF-8">
             <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Управление медикаментами и расходными материалами</title>
+            <title>Управление медикаментами</title>
         </head>
         <body>
             <h1>Управление медикаментами и расходными материалами</h1>

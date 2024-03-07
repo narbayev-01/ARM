@@ -13,6 +13,7 @@ class ScheduleController{
     }
 
     public function index() {
-        $this->view->render();
+        $doctors = $this->model->getAllDoctors();
+        $this->view->render($doctors);
     }
 }

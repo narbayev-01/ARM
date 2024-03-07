@@ -13,6 +13,7 @@ class PatientController {
     }
 
     public function index() {
-        $this->view->render();
+        $animals = $this->model->getAllAnimals();
+        $this->view->render($animals);
     }
 }

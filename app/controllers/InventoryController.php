@@ -13,6 +13,7 @@ class InventoryController {
     }
 
     public function index() {
-        $this->view->render();
+        $medicines = $this->model->getAllMedicines();
+        $this->view->render($medicines);
     }
 }

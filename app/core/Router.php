@@ -15,6 +15,10 @@ class Router {
         include 'includes/header.php';
 
         switch ($uri) {
+            case '/':
+                echo 'Добро пожаловать в АРМ специалиста ветеринарной клиники!';
+                break;
+
             case '/patient':
                 $controller = new PatientController($db->conn);
                 $controller->index();

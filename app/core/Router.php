@@ -33,7 +33,12 @@ class Router {
                 $controller = new ScheduleController($db->conn);
                 $controller->index();
                 break;
-            
+
+            case '/createAppointment':
+                $controller = new ScheduleController($db->conn);
+                $controller->CreateAppointment();
+                break;
+        
             case '/inventory':
                 $controller = new InventoryController($db->conn);
                 $controller->index();

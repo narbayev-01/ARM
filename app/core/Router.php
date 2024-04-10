@@ -24,6 +24,11 @@ class Router {
                 $controller->index();
                 break;
 
+            case '/registerPatient':
+                $controller = new PatientController($db->conn);
+                $controller->RegisterPatient();
+                break;
+
             case '/schedule':
                 $controller = new ScheduleController($db->conn);
                 $controller->index();

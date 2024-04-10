@@ -1,16 +1,9 @@
 <?php
 class PatientView {
     public function render($animals) {
-        echo '<!DOCTYPE html>
-        <html lang="en">
-        <head>
-            <meta charset="UTF-8">
-            <meta name="viewport" content="width=device-width, initial-scale=1.0">
-            <title>Учет пациентов</title>
-        </head>
-        <body>
+        echo '
             <h1>Учет пациентов</h1>
-            <form action="submit_patient.php" method="POST">
+            <form action="registerPatient" method="POST">
                 <label for="species">Вид животного:</label><br>
                 <select id="species" name="species">';
                 
@@ -36,8 +29,7 @@ class PatientView {
     
             <input type="submit" value="Добавить пациента">
         </form>
-        </body>
-        </html>';
+        ';
     }
     
 }

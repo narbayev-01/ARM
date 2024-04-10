@@ -44,6 +44,11 @@ class Router {
                 $controller->index();
                 break;
 
+            case '/addProduct':
+                $controller = new InventoryController($db->conn);
+                $controller->AddProduct();
+                break;
+
             default:
                 // Ошибка 404
                 header('HTTP/1.0 404 Not Found');
